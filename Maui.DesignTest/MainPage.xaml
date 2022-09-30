@@ -71,11 +71,7 @@
                         <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped" />
                     </Label.GestureRecognizers>
                 </Label>
-
             </StackLayout>
         </Grid>
-
-
     </Grid>
-
 </ContentPage>
