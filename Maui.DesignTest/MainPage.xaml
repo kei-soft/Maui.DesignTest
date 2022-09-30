@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Maui.DesignTest.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Shell.NavBarIsVisible>false</Shell.NavBarIsVisible>
+    <Shell.TabBarIsVisible>false</Shell.TabBarIsVisible>
+
+    <Grid BackgroundColor="#B2BFB6">
+        <Grid>
+            <Frame
+                x:Name="mainFrame"
+                Margin="-110,30,0,0"
+                BackgroundColor="#FBEBE3"
+                CornerRadius="200"
+                HeightRequest="400"
+                HorizontalOptions="Start"
+                Opacity="0.7"
+                WidthRequest="400" />
+            <Frame
+                x:Name="subFrame"
+                Margin="-50,0,0,0"
+                BackgroundColor="#5D766D"
+                CornerRadius="0"
+                HeightRequest="270"
+                HorizontalOptions="End"
+                Opacity="0.6"
+                VerticalOptions="End"
+                WidthRequest="280" />
+            <Frame
+                x:Name="subFrame2"
+                Margin="0,0,-250,-230"
+                BackgroundColor="#FBEBE3"
+                CornerRadius="200"
+                HeightRequest="400"
+                HorizontalOptions="End"
+                Opacity="0.6"
+                VerticalOptions="End"
+                WidthRequest="450" />
+        </Grid>
+        <Grid RowDefinitions="Auto,*,150">
+            <Label
+                Grid.Row="0"
+                Margin="10,20"
+                FontAttributes="Bold"
+                FontSize="Subtitle"
+                Text="Kei Software" />
+            <StackLayout Grid.Row="1" VerticalOptions="Center">
+                <Label
+                    Margin="10"
+                    FontAttributes="Bold, Italic"
+                    FontFamily="Arial"
+                    FontSize="50"
+                    LineHeight="1"
+                    Text="We&#10;program &#10;your valuable &#10;ideas" />
+                <Label
+                    Margin="10"
+                    FontFamily="Arial"
+                    FontSize="Body"
+                    LineHeight="1"
+                    Text="Choose keisoft &#10;if you want the best possible results." />
+                <Label
+                    x:Name="enterLabel"
+                    Margin="10,0"
+                    FontFamily="Arial"
+                    FontSize="30"
+                    LineHeight="1"
+                    Text="→">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+            </StackLayout>
+        </Grid>
+
+
+    </Grid>
+
+</ContentPage>
